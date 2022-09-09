@@ -5,7 +5,7 @@
     <title>5 reason dogs are better then cats </title>
     <style>
         body {
-            background: rgb(125, 198, 205);
+            background: rgb(241, 21, 21);
             color: rgb(45, 45, 45);
             padding: 10px;
             font-family: arial;
@@ -18,8 +18,9 @@
 
         /* navigation menu */
         nav {
-            background: rgb(239, 80, 41);
+            background: rgb(243, 247, 12);
             margin: 0 auto;
+            margin-bottom: 20px;
             display: flex;
             padding: 10px;
         }
@@ -27,7 +28,7 @@
         h1 {
             display: flex;
             align-items: center;
-            color: white;
+            color: rgb(75, 74, 74);
             flex: 1;
             margin: 0;
         }
@@ -43,12 +44,12 @@
 
         a {
             text-decoration: none;
-            color: #fff;
+            color: rgb(252, 248, 26);
         }
 
         /* main container area beneath menu */
         main {
-            background: rgb(245, 238, 219);
+            background: rgb(248, 252, 35);
             display: flex;
         }
 
@@ -67,7 +68,7 @@
         }
 
         #interests {
-            border: 4px silver ridge;
+            border: 4px rgb(255, 0, 0) ridge;
             padding: 8px;
         }
 
@@ -80,14 +81,14 @@
 
 <body>
     <!-- all content goes here -->
-    <div id="all-contents"> 
+    <div id="all-contents">
         <nav>
             <h1> dogs > cats </h1>
-            <ul>
-                <li>
+            <ul id="nav-ul">
+                <li class="nav-li">
                     <a href="index.html"> home </a>
                 </li>
-                <li>
+                <li class="nav-li">
                     <a href="portfolio.html"> portfolio </a>
                 </li>
             </ul>
@@ -95,16 +96,22 @@
 
         <main>
             <!-- sidebar img -->
-            <div>
-                <img src="img/dogs-1.jpeg" width="300">
-                <img src="img/ugly-cat.jpg" width="250">
+            <div class="sidebar">
+                <img class="sidebar-img" src="img/dogs-1.jpeg" width="300">
+                <img class="sidebar-img" src="img/ugly-cat.jpg">
             </div>
 
             <!-- content section -->
-            <div>
+            <div class="content">
                 <h2>why dogs are better then cats </h2>
                 <p>Which one do you think is better </p>
+                <!-- interests section -->
+                <div id="interests">
+                    <ol> Reasons dogs are better then cats is they can protect you,Dogs are more trainable,and promote a
+                        more active lifestyle. Reasons cats are better then dogs ...... exactly just buy a dogs cats suck.
 
+                    </ol>
+                </div>
             </div>
         </main>
     </div>
