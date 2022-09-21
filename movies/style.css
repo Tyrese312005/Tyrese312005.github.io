@@ -15,7 +15,6 @@ body {
 .navbar-container {
     display: flex;
     align-items: center;
-    background-color: blanchedalmond;
     padding: 0 50px;
     height: 100%;
     color: white;
@@ -23,22 +22,35 @@ body {
 
 .logo-container {
     flex: 1;
-    background-color: green;
 
 }
 
-.logos{
-    font-family: sen, sans-serif;
+.logo{
+    font-family: sen, san-serif;
+    font-size: 30px;
+    color: #4dbf4d;
 }
 
 .menu-container {
     flex: 6;
-    background-color: rgb(187, 130, 130);
+
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item{
+    margin-right: 30px;
+}
+
+.menu-list-item.active{
+ font-weight: bold;   
 }
 
 .profile-container {
-    flex: 1;
-    background-color: red;
+    flex: 2;
+
 }
 
 .sidebar {
@@ -49,8 +61,5 @@ body {
     top: 0;
 }
 
-
-
-
-/* 10:12 */
-/* https://youtu.be/AOlkcLtyXkw?t=612 */
+/* 13:04 */
+/* https://youtu.be/AOlkcLtyXkw */
