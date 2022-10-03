@@ -6,15 +6,15 @@
   let platform = window.opspark.platform;
 
   /**
-   * init: This function initializes
+   * init: This function initializes the platforms for the level.
+   *
    * GOAL: Add as many platforms necessary to make your level challenging.
    *
    * Use the createPlatform Function to create platforms for the level.
    *
    * createPlatform() takes these arguments:
    *
-   *      createPlatform(x, y, scaleX, scaleY); the platforms for the level.
-   *
+   *      createPlatform(x, y, scaleX, scaleY);
    *
    *      x: The x coordineate for the platform.
    *      y: The y coordineate for the platform.
@@ -37,12 +37,8 @@
     createPlatform(0, game.world.height - 32, 3, 2); // DO NOT DELETE
 
     // example:
-    createPlatform(400, 320,2.3);
-    createPlatform(180, 540, 0.5);
-    createPlatform(480, 620, 0.8 );
-    createPlatform(0, 480,0.5);
-    createPlatform(230,390,0.5)
-  
+    createPlatform(400, 250);
+    createPlatform(170, 460, 0.5);
 
     // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////
