@@ -26,6 +26,7 @@
         function configureTween(tween, projectile, cannon) {
             tween.onStart.addOnce(function () {
                 projectile.alpha = 1;
+                projectile.scale.x = projectile.scale.y = 0.2;
             });
             tween.onComplete.addOnce(function () {
                 projectile.alpha = 0;
