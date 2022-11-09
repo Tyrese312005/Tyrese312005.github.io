@@ -38,6 +38,10 @@
 <body class="board">
 	<!-- HTML for the box -->
 	<div class="box">?</div>
+	<!-- sound in game -->
+	<audio controls autoplay>
+		<source src="audio/star-wars.mp3" type="audio/mpeg">
+	</audio>
 
 	<script>
 		(function () {
@@ -64,12 +68,12 @@
 			}
 
 			// flip the image around
-			function flipImage(){
-				box.css("transform","rotateY(180deg)");
+			function flipImage() {
+				box.css("transform", "rotateY(180deg)");
 			}
 			// flip image back
-			function flipImageBack(){
-				box.css("transform","");
+			function flipImageBack() {
+				box.css("transform", "");
 			}
 
 			// changes the text displayed on the Box
@@ -115,11 +119,11 @@
 				points = points + 1;
 				console.log(points)
 				changeBoxText(points);
-				
-				if (speed > 0){
+
+				if (speed > 0) {
 					speed = speed + 3;
 
-				}else {
+				} else {
 					speed = speed - 3
 				}
 
