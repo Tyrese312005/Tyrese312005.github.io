@@ -57,11 +57,16 @@
 			var boardWidth = board.width();	// the maximum X-Coordinate of the screen
 
 			// Every 50 milliseconds, call the update Function (see below)
-			setInterval(update, 50);
+			var interval = setInterval(update, 50);
 
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
 			box.on('click', handleBoxClick);
 
+			// every missClick call misses
+			board.on("click", handleMiss)
+			function endGame(){
+				clearInterval(interval)
+			}
 			// moves the Box to a new position on the screen along the X-Axis
 			function moveBoxTo(newPositionX) {
 				box.css("left", newPositionX);
@@ -89,6 +94,7 @@
 			var positionX = 0;
 			var points = 0;
 			var speed = 10;
+			var missClicks = 0
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -128,6 +134,16 @@
 				}
 
 			};
+
+			// add a number missclicks
+			function handleMiss() {
+				missClicks = missClicks + 1
+
+				if(){
+				
+			};
+
+
 		})();
 	</script>
 </body>
