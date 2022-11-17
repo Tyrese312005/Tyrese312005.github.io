@@ -18,6 +18,7 @@
 			position: absolute;
 			top: 100px;
 			left: 0px;
+			user-select: none;
 			/* <--- Change me! */
 		}
 
@@ -64,7 +65,7 @@
 
 			// every missClick call misses
 			board.on("click", handleMiss)
-			function endGame(){
+			function endGame() {
 				clearInterval(interval)
 			}
 			// moves the Box to a new position on the screen along the X-Axis
@@ -95,6 +96,7 @@
 			var points = 0;
 			var speed = 10;
 			var missClicks = 0
+			var isGameMoving = true
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -122,8 +124,10 @@
 			*/
 			function handleBoxClick() {
 				positionX = 0;
-				points = points + 1;
-				console.log(points)
+				
+				if (isGameMoving === true) {
+					points = points + 1;
+				}
 				changeBoxText(points);
 
 				if (speed > 0) {
@@ -138,10 +142,11 @@
 			// add a number missclicks
 			function handleMiss() {
 				missClicks = missClicks + 1
-
-				if(){
-				
-			};
+				if (missClicks === 10) {
+					endGame()
+					isGameMoving = false
+				}
+			}
 
 
 		})();
