@@ -56,11 +56,12 @@
                 </div>
                 <div id="nachos" class="menu-item">
                     <h4> #3 - nachos</h4>
-                    <h4>3.30</h>
+                    <h4>3.99</h>
                         <img src="https://www.pngitem.com/pimgs/m/104-1045375_transparent-nachos-png-png-download.png"
                             </div>
                         <div id="loaded fries" class="menu-item">
                             <h4> #4 - loaded fries</h4>
+                            <h4> 2.99</h4>
                             <img src="http://dashboard.myelmos.com/thumbnail/9036/500x500" <h4> 5.30
                     </h4>
                 </div>
@@ -69,8 +70,21 @@
     <script>
         $('button').on('click', takeOrder);
         function takeOrder() {
-            console.log("taking order")
+            var orderNumber = prompt("pick combo");  
+            var total = 0
+            
+            if (orderNumber === 1) {
+                total += 6.99;
+            } else if(orderNumber === 2){
+                total += 9.99;
+            }else if(orderNumber === 3){
+                total += 3.99
+            }
+
+
+
         }
+        
     </script>
 </body>
 
