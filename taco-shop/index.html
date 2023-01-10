@@ -73,15 +73,24 @@
             var orderNumber = prompt("pick combo");  
             var total = 0
             
-            if (orderNumber === 1) {
+            
+            if (orderNumber === "1") {
                 total += 6.99;
-            } else if(orderNumber === 2){
+                alert("you ordered three tacos")
+            } else if(orderNumber === "2"){
                 total += 9.99;
-            }else if(orderNumber === 3){
+                alert("you ordered five Tacos" )
+            }else if(orderNumber === "3"){
                 total += 3.99
+                alert("you ordered nachos")
+            }else if(orderNumber ==="4"){
+                total += 2.99
+                alert("you ordered loaded fries")
+            }else {
+                alert('sorry, you entered an incorrect combo number')
             }
 
-
+            alert('The total for your order is ' + total + '. We\'ll have it out shortly. Thanks for visiting the taco shop, and have a nice day!')
 
         }
         
