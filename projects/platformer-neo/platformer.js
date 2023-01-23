@@ -36,6 +36,7 @@ createPlatform(500, 350, 250,20 )
 createPlatform(200, 230,250,20)
 createPlatform(500,100,250,20)    
 createPlatform(750,10,20,450)
+createPlatform(900, 580, 100, 10)
     
     
     
