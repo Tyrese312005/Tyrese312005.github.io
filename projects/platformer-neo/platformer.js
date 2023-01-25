@@ -21,6 +21,8 @@ $(function () {
     createPlatform(-50, -50, 50, canvas.height + 500); //bottom
     createPlatform(canvas.width, -50, 50, canvas.height + 100);
 
+    
+
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
     /////////////////////////////////////////////////
@@ -54,8 +56,11 @@ createPlatform(970,100,200,10)
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
     
-    
-    
+    createCollectable("database",250,650,0,5)
+    createCollectable("database", 200,650,0,5)
+    createCollectable("database",300,650,0,5)
+    createCollectable("diamond",250,430,0,5)
+    createCollectable("grace",700,300,0,5)
     
     
     
