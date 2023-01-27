@@ -61,7 +61,9 @@ createPlatform(970,100,200,10)
     createCollectable("database",300,650,0,5)
     createCollectable("diamond",250,430,0,5)
     createCollectable("grace",700,300,0,5)
-    
+    createCollectable("kennedi",250,180,0,5)
+    createCollectable("max",700,50,0,5)
+    createCollectable("database",250,500,0,5)
     
     
     // TODO 3
