@@ -19,7 +19,7 @@
       margin: none;
     }
     a {
-      font-size: 42px;
+      font-size: 37px;
     }
     .sidebar {
       margin-right: 0px;
@@ -36,5 +36,8 @@
     .content {
       align-content: center;
       justify-content: center;
+    }
+    #portfolio {
+      font-size: 3px;
     }
 }
