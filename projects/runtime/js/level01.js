@@ -40,7 +40,7 @@ var level01 = function (window) {
         obstacleImage.x = -hitZoneSize
         obstacleImage.y = -hitZoneSize
         sawBladeHitZone.addChild(obstacleImage);
-
+        
 
 
         // DO NOT EDIT CODE BELOW HERE

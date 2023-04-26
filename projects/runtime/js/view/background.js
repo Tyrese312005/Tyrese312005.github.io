@@ -44,8 +44,8 @@ var background = function (window) {
             var moon = draw.bitmap("img/moon.png");
             moon.x = 300;
             moon.y = 200;
-            moon.scaleX = 10.0;
-            moon.scaleY = 10.0;
+            moon.scaleX = 1.0;
+            moon.scaleY = 1.0;
             background.addChild(moon);
 
             for (var i = 0; i < 100; i++) {
@@ -56,8 +56,8 @@ var background = function (window) {
             }
 
             // TODO 5: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
-            for (var i = 0; i < 5; ++i) {
-                var buildingHeight = 300;
+            for (var i = 0; i < 10; ++i) {
+                var buildingHeight = groundY * Math.random();
                 var building = draw.rect(75, buildingHeight, "blue ", "white", 5);
                 building.x = 200 * i;
                 building.y = groundY - buildingHeight;
@@ -91,7 +91,9 @@ var background = function (window) {
             if (tree.x < -200) {
                 tree.x = canvasWidth;
             }
-
+            if (tree.x > canvasWidth){
+                tree.x = -200
+            }
             // TODO 5: Part 2 - Parallax
             for (var i = 0; i < buildings.length; i++) {
                 var eachElement = buildings[i];
