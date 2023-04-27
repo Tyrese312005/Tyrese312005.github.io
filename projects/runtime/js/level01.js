@@ -35,12 +35,19 @@ var level01 = function (window) {
         sawBladeHitZone.x = 500;
         sawBladeHitZone.y = 450;
         game.addGameItem(sawBladeHitZone);
-        
+
         var obstacleImage = draw.bitmap("img/sawblade.png");
         obstacleImage.x = -hitZoneSize
         obstacleImage.y = -hitZoneSize
         sawBladeHitZone.addChild(obstacleImage);
-        
+
+        function createSawBlade(x, y) {
+         var average = (x + y) / 2;
+            console.log("the average of " + x + " and " + y + " is " + average);
+
+
+        }
+
 
 
         // DO NOT EDIT CODE BELOW HERE
