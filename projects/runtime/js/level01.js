@@ -27,28 +27,39 @@ var level01 = function (window) {
 
         // TODO 6 and on go here
         // BEGIN EDITING YOUR CODE HERE
-        var hitZoneSize = 25;
-        var damageFromObstacle = 10;
-        var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
 
-
-        sawBladeHitZone.x = 500;
-        sawBladeHitZone.y = 450;
-        game.addGameItem(sawBladeHitZone);
-
-        var obstacleImage = draw.bitmap("img/sawblade.png");
-        obstacleImage.x = -hitZoneSize
-        obstacleImage.y = -hitZoneSize
-        sawBladeHitZone.addChild(obstacleImage);
 
         function createSawBlade(x, y) {
-         var average = (x + y) / 2;
-            console.log("the average of " + x + " and " + y + " is " + average);
+
+            var hitZoneSize = 25;
+            var damageFromObstacle = 10;
+            var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
+
+
+            sawBladeHitZone.x = x;
+            sawBladeHitZone.y = y;
+            game.addGameItem(sawBladeHitZone);
+
+            var obstacleImage = draw.bitmap("img/sawblade.png");
+            obstacleImage.x = -hitZoneSize
+            obstacleImage.y = -hitZoneSize
+            sawBladeHitZone.addChild(obstacleImage);
 
 
         }
 
+        for (var i = 0; i < 10; i++) {
+            createSawBlade(Math.random() * 500, Math.random() * 400)
+        }
 
+        var enemy = game.createGameItem("enemy", 25);
+        var redSquare = draw.rect(50, 50, "gray");
+        redSquare.x = -25;
+        redSquare.y = -25;
+        enemy.addChild(redSquare);
+        enemy.x = 400;
+        enemy.y = groundY - 50;
+        game.addGameItem(enemy);
 
         // DO NOT EDIT CODE BELOW HERE
     }
