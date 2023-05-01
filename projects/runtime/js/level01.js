@@ -60,7 +60,14 @@ var level01 = function (window) {
         enemy.x = 400;
         enemy.y = groundY - 50;
         game.addGameItem(enemy);
+        enemy.velocityX = 1;
+        enemy.rotationalVelocity = 10
 
+        enemy.onPlayerCollision = function () {
+            game.increaseScore(100);
+            enemy.fadeOut();
+            game.changeIntegrity(-10)
+        };
         // DO NOT EDIT CODE BELOW HERE
     }
 };
