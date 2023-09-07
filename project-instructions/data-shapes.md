@@ -68,7 +68,7 @@ On the preview page, you will see a box with information in it, the current inde
 
 At this point, none of the "Display" buttons will work. You will have to add this functionality in yourself.
 
-To show that you read this, add a comment on line 39 that says `"// TODO 0 complete"`
+To show that you read this, add a comment on line 39 of `index.js` that says `"// TODO 0 complete"`
 
 ## TODO 1: Create More Data
 
@@ -90,7 +90,7 @@ By default, the program produces data for 26 different objects automatically. Yo
 
 ## TODO 2: Add a New Property
 
-For this TODO, you will need to add a new `goodBehavior` property to every object in the `dataShapes` array. The value of
+For this TODO, you will need to add a new `goodBehavior` property to every object in the `dataShapes` array.
 
 - **2a)** Make a loop that iterates over the `dataShapes` array
 

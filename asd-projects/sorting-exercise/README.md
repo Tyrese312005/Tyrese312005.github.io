@@ -55,7 +55,7 @@ git push
 
 ## TODO 0: Study Existing Code (no coding)
 
-Before you begin working, you should notice that thre are three JavaScript files already there. They are as follows:
+Before you begin working, you should notice that there are three JavaScript files already there. They are as follows:
 
 <hr>
 
@@ -85,7 +85,7 @@ This file registers the "Start" button with the event manager. You won't need to
 
 This is the only file you will be required to work with, and it is where you will implement your sort functions. Some helper functions have already been created for you. They are as follows:
 * `sleep`: this (sort of) pauses execution so that your sorting can be redrawn one step at a time.
-* `drawSwap`: this function redraws your screen to show the updated ordering every time a swap occurs. You must tell it which array to redraw from, and which to element indexes have been swapped.
+* `drawSwap`: this function redraws your screen two show the updated ordering every time a swap occurs. You must tell it which array to redraw from, and which to element indexes have been swapped.
 * `updateCounter`: this function updates the specified counter after a swap occurs.
 
 Once you have looked over the above and are comfortable with it, move on to the rest of the project below.
@@ -187,13 +187,13 @@ Here is a description of the function you must create.
 
 >**PSEUDOCODE (for your reference; detailed instructions are below):**
 >```
->FUNCTION quicksort(array, left, right):
+>FUNCTION quickSort(array, left, right):
 >   IF (right - left) > 0:
 >     index = partition(array, left, right)
 >     IF left < (index - 1):
->       quicksort(array, left, index - 1)
+>       quickSort(array, left, index - 1)
 >     IF index < right:
->       quicksort(array, index, right)
+>       quickSort(array, index, right)
 >```
 
 <hr>
